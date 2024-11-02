@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="/static/app.css">
+  <title>Peter Darinzo</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <span>Peter Darinzo</span>
+    <div>
+      <a href="/public/home.html">Home</a>
+      <a href="/public/blog.html">Blog</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="filler"></div>
+    <div class="content">
+      {% block content %}
+      {% endblock %}
+    </div>
+    <div class="filler"></div>
+  </div>
+</body>
+
+</html>

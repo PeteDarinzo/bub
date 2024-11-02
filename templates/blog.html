@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>My Thoughts</h1>
+
+<hr>
+
+<ul>
+    {% for post in posts %}
+    <li>
+        <div>
+            <h2>
+                <a href="posts/{{ post.slug }}.html">{{ post.title }}</a>
+            </h2>
+            <small>{{post.date}}</small>
+        </div>
+        {{ post.summary }}
+    </li>
+    {% endfor %}
+</ul>
+
+
+{% endblock %}

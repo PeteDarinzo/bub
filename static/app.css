@@ -1,0 +1,26 @@
+body {
+    font-family: sans-serif;
+}
+
+#profile-picture {
+    width: 300px;
+    margin: auto;
+    display: block;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container {
+    display: flex;
+}
+
+.content {
+    flex: 2;
+}
+
+.filler {
+    flex: 1;
+}
