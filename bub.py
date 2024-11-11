@@ -36,7 +36,7 @@ posts_metadata = [POSTS[post].metadata for post in POSTS]
 tags = [post["tags"] for post in posts_metadata]
 home_html = home_template.render()
 blog_html = blog_template.render(posts=posts_metadata, tags=tags)
-with open("public/home.html", "w") as file:
+with open("public/index.html", "w") as file:
     file.write(home_html)
 
 with open("public/blog.html", "w") as file:
